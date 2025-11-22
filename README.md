@@ -68,6 +68,7 @@ Open the Notebook:
 jupyter notebook notebooks/netflix_analysis.ipynb
 # Or open in Google Colab  
 Run cells to regenerate visualizations; HTML interactive plots will be saved to visuals/.
+
 📁 Repository Structure
 ├── data/                   # Dataset CSV  
 ├── notebooks/              # Analysis Notebook  
@@ -79,6 +80,16 @@ Run cells to regenerate visualizations; HTML interactive plots will be saved to 
 Timur Kangereyev
 Zhanel Karimzhanova
 
+Contact
+Email: kangereev.timur@gmail.com; karimzhanovazhanel4
+GitHub: kangereyevTimur; janelkr
+
+Acknowledgments
+Kaggle for providing the Netflix dataset
+Seaborn, Plotly, and Matplotlib communities for amazing visualization libraries
+Mentors and colleagues who provided feedback on the project
+
  License
 This project is licensed under the MIT License.
+
 
