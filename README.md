@@ -78,8 +78,7 @@ Run cells to regenerate visualizations; HTML interactive plots will be saved to 
 └── LICENSE                 # License file (if any)  
 
  # Authors
-Timur Kangereyev
-Zhanel Karimzhanova
+Timur Kangereyev; Zhanel Karimzhanova
 
 # Contact
 Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
@@ -93,6 +92,7 @@ Mentors and colleagues who provided feedback on the project
 
 #  License
 This project is licensed under the MIT License.
+
 
 
 
