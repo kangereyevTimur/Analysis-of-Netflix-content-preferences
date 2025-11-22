@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/netflix_titles.csv')
 df.fillna(0, inplace=True)
-```
+
 # Count of Movies vs TV Shows
 sns.countplot(data=df, x='type')
 plt.title('Movies vs TV Shows on Netflix')
@@ -49,7 +49,9 @@ plt.xlabel('Year')
 plt.ylabel('Number of Releases')
 plt.show()
 Description: Visualizes the yearly trend of Netflix content production.
-```2. Top Countries and Genres
+```
+2. Top Countries and Genres
+```
 # Top 10 countries
 top_countries = df['country'].value_counts().head(10)
 sns.barplot(x=top_countries.values, y=top_countries.index)
@@ -70,6 +72,7 @@ plt.show()
 Description: Shows the most popular genres and their distribution among Netflix titles.
 ```
 3. Clustering
+```
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.cluster import KMeans
 
@@ -111,14 +114,19 @@ Top 10 Genres
 Shows the frequency of the most popular genres on Netflix.
 
 Number of Releases Per Year
+
 ![Releases per Year](visuals/releases_per_year.png)
+
 Shows the yearly trend of Netflix content releases.
 
 Top Countries by Content Volume
+
 ![Top Countries](visuals/top_countries.png)
+
 Highlights countries with the highest number of Netflix titles.
 
 Distribution of Genre Clusters
+
 ![Genre Clusters](visuals/genre_clusters.png)
 
 Represents 5 genre clusters, showing how titles group by content type.
@@ -146,12 +154,12 @@ jupyter notebook notebooks/netflix_analysis.ipynb
 # or open in Google Colab
 
 # Authors
-Timur Kangereyev
+Timur Kangereyev;
 Zhanel Karimzhanova
 
 # Contact
 Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
-GitHub: kangereyevTimur; janel4
+GitHub: kangereyevTimur; janelkr
 
 # Acknowledgments
 Kaggle for the Netflix dataset
@@ -160,6 +168,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
