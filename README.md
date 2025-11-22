@@ -151,7 +151,7 @@ cd Analysis-of-Netflix-content-preferences
 pip install -r requirements.txt
 jupyter notebook notebooks/netflix_analysis.ipynb
 
-# or open in Google Colab
+or open in Google Colab
 
 # Authors
 Timur Kangereyev;
@@ -168,6 +168,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
