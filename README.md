@@ -66,7 +66,7 @@ Install dependencies:
 pip install -r requirements.txt
 Open the Notebook:
 jupyter notebook notebooks/netflix_analysis.ipynb
-# or open in Google Colab  
+# Or open in Google Colab  
 Run cells to regenerate visualizations; HTML interactive plots will be saved to visuals/.
 📁 Repository Structure
 ├── data/                   # Dataset CSV  
@@ -75,8 +75,10 @@ Run cells to regenerate visualizations; HTML interactive plots will be saved to 
 ├── README.md               # This README  
 ├── requirements.txt        # Python dependencies  
 └── LICENSE                 # License file (if any)  
-👥 Authors
+ Authors
 Timur Kangereyev
 Zhanel Karimzhanova
-📄 License
+
+ License
 This project is licensed under the MIT License.
+
