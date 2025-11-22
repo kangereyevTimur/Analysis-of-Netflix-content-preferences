@@ -120,37 +120,47 @@ Highlights countries with the highest number of Netflix titles.
 
 Distribution of Genre Clusters
 ![Genre Clusters](visuals/genre_clusters.png)
+
 Represents 5 genre clusters, showing how titles group by content type.
 Interactive Plot — Releases by Year & Country
 View Interactive Plot
 Interactive line chart for top 5 countries, showing content release trends over time.
-🔮 Future Work
+
+# Future Work
 Sentiment analysis of title descriptions
 Build a recommendation system based on country + genre clusters
 Explore advanced clustering methods (hierarchical clustering, DBSCAN)
 Deploy interactive dashboards (Dash / Streamlit)
-🛠️ Technologies & Tools
+
+# Technologies & Tools
 Python 3.x
 pandas, numpy, seaborn, matplotlib, plotly, scikit-learn
 Jupyter Notebook / Google Colab
-✅ How to Run
+
+# How to Run
 git clone git@github.com:kangereyevTimur/Analysis-of-Netflix-content-preferences.git
 cd Analysis-of-Netflix-content-preferences
 pip install -r requirements.txt
 jupyter notebook notebooks/netflix_analysis.ipynb
+
 # or open in Google Colab
-👥 Authors
+
+# Authors
 Timur Kangereyev
 Zhanel Karimzhanova
-📬 Contact
-Email: kangereev.timur@gmail.com
-GitHub: kangereyevTimur
-🙏 Acknowledgments
+
+# Contact
+Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
+GitHub: kangereyevTimur; janel4
+
+# Acknowledgments
 Kaggle for the Netflix dataset
 Seaborn, Plotly, Matplotlib communities
 Mentors and colleagues for feedback
-📄 License
+
+# License
 This project is licensed under the MIT License.
+
 
 
 
