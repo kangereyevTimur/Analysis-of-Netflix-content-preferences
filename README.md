@@ -76,20 +76,22 @@ Run cells to regenerate visualizations; HTML interactive plots will be saved to 
 ├── README.md               # This README  
 ├── requirements.txt        # Python dependencies  
 └── LICENSE                 # License file (if any)  
- Authors
+
+ # Authors
 Timur Kangereyev
 Zhanel Karimzhanova
 
-Contact
+# Contact
 Email: kangereev.timur@gmail.com; karimzhanovazhanel4
 GitHub: kangereyevTimur; janelkr
 
-Acknowledgments
+# Acknowledgments
 Kaggle for providing the Netflix dataset
 Seaborn, Plotly, and Matplotlib communities for amazing visualization libraries
 Mentors and colleagues who provided feedback on the project
 
- License
+#  License
 This project is licensed under the MIT License.
+
 
 
