@@ -82,7 +82,8 @@ Timur Kangereyev
 Zhanel Karimzhanova
 
 # Contact
-Email: kangereev.timur@gmail.com; karimzhanovazhanel4
+Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
+
 GitHub: kangereyevTimur; janelkr
 
 # Acknowledgments
@@ -92,6 +93,7 @@ Mentors and colleagues who provided feedback on the project
 
 #  License
 This project is licensed under the MIT License.
+
 
 
 
