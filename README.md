@@ -28,7 +28,6 @@ Netflix Movies and TV Shows Dataset
 4. **Comparative Analysis**  
    - Activity of content across top countries  
    - Yearly trends in releases by country
-   
 
 ## Requirements
 - Python 3.x  
@@ -36,29 +35,27 @@ Netflix Movies and TV Shows Dataset
 
 Install dependencies:
 
-
-Install dependencies:
-
 ```bash
 pip install -r requirements.txt
 ```
-
 Usage
 Clone the repository:
 git clone git@github.com:kangereyevTimur/Analysis-of-Netflix-content-preferences.git
 cd Analysis-of-Netflix-content-preferences
 Open the notebook:
 jupyter notebook notebooks/netflix_analysis.ipynb
-# or in Google Colab
+# or open in Google Colab
 Explore the notebook and interact with the visualizations.
+
 Visuals
 Examples of visualizations produced in the project:
-Top 10 genres on Netflix:
-Number of releases per year:
-Top countries by content volume:
-Genre clustering distribution:
-Author
-Timur Kangereyev, Zhanel Karimzhanova
-```bash
-pip install -r requirements.txt
+Top 10 genres on Netflix
+Number of releases per year
+Top countries by content volume
+Genre clustering distribution
+Authors
+Timur Kangereyev
+Zhanel Karimzhanova
+License
+This project is licensed under the MIT License.
 
