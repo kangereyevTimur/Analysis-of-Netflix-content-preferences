@@ -69,7 +69,7 @@ jupyter notebook notebooks/netflix_analysis.ipynb
 # Or open in Google Colab  
 Run cells to regenerate visualizations; HTML interactive plots will be saved to visuals/.
 
-📁 Repository Structure
+# Repository Structure
 ├── data/                   # Dataset CSV  
 ├── notebooks/              # Analysis Notebook  
 ├── visuals/                # Saved PNGs & HTML plots  
@@ -93,6 +93,7 @@ Mentors and colleagues who provided feedback on the project
 
 #  License
 This project is licensed under the MIT License.
+
 
 
 
