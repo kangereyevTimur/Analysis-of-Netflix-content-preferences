@@ -10,12 +10,19 @@ We explore content trends, genre distribution, clustering by country and genre, 
 
 ## 🏛 Architecture
 Netflix-Content-Analysis/
+
 ├── data/ # Original dataset CSV
+
 ├── notebooks/ # Jupyter notebook(s) with all code
+
 │ └── netflix_analysis.ipynb
+
 ├── visuals/ # Saved PNG and HTML interactive plots
+
 ├── README.md # Project documentation
+
 ├── requirements.txt # Python dependencies
+
 └── LICENSE # License file
 - **data/** – хранит CSV с Netflix контентом  
 - **notebooks/** – основной анализ: EDA, визуализация, кластеризация  
@@ -168,6 +175,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
