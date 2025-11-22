@@ -154,8 +154,11 @@ Jupyter Notebook / Google Colab
 
 # How to Run
 git clone git@github.com:kangereyevTimur/Analysis-of-Netflix-content-preferences.git
+
 cd Analysis-of-Netflix-content-preferences
+
 pip install -r requirements.txt
+
 jupyter notebook notebooks/netflix_analysis.ipynb
 
 or open in Google Colab
@@ -166,6 +169,7 @@ Zhanel Karimzhanova
 
 # Contact
 Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
+
 GitHub: kangereyevTimur; janelkr
 
 # Acknowledgments
@@ -175,6 +179,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
