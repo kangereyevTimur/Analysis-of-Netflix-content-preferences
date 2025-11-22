@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview  
 This project analyzes Netflix movies and TV shows to understand viewer preferences across genres and countries.  
-We explore content trends, genre distribution, and clustering by country and genre, and produce interactive visualizations.
+We explore content trends, genre distribution, clustering by country and genre, and produce interactive visualizations.
 
 ## 📊 Dataset  
 - **Source:** [Kaggle Netflix Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows)  
@@ -10,35 +10,36 @@ We explore content trends, genre distribution, and clustering by country and gen
 
 ## 🏛 Architecture
 Netflix-Content-Analysis/
-├── data/ # Dataset CSV
-├── notebooks/ # Jupyter notebooks with analysis code
+├── data/ # Original dataset CSV
+├── notebooks/ # Jupyter notebook(s) with all code
 │ └── netflix_analysis.ipynb
-├── visuals/ # Saved PNGs & HTML interactive plots
+├── visuals/ # Saved PNG and HTML interactive plots
 ├── README.md # Project documentation
 ├── requirements.txt # Python dependencies
 └── LICENSE # License file
-- **Data Loading & Cleaning:** Pandas used to read CSV and fill missing values.  
-- **EDA & Visualization:** Seaborn, Matplotlib, Plotly.  
-- **Clustering:** MultiLabelBinarizer + KMeans for genre-based clustering.  
-- **Results:** Visualized trends by year, genre, and country; interactive plots saved in `visuals/`.
+- **data/** – хранит CSV с Netflix контентом  
+- **notebooks/** – основной анализ: EDA, визуализация, кластеризация  
+- **visuals/** – итоговые графики, PNG + интерактивные HTML  
+- **README.md** – документация и описание проекта  
+- **requirements.txt** – зависимости для Python  
 
 ## 🔍 Analysis Steps  
 
 ### 1. Exploratory Data Analysis (EDA)
 ```python
-```
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/netflix_titles.csv')
 df.fillna(0, inplace=True)
-
+```
 # Count of Movies vs TV Shows
 sns.countplot(data=df, x='type')
 plt.title('Movies vs TV Shows on Netflix')
 plt.show()
-Description: This plot shows the proportion of movies vs TV shows on Netflix.
+Description: Shows the proportion of movies vs TV shows. Helps to understand Netflix content type distribution.
 # Number of releases per year
 df['release_year'] = pd.to_numeric(df['release_year'], errors='coerce')
 year_counts = df['release_year'].value_counts().sort_index()
@@ -47,14 +48,14 @@ plt.title('Number of Netflix Releases Per Year')
 plt.xlabel('Year')
 plt.ylabel('Number of Releases')
 plt.show()
-Description: Visualizes the trend of Netflix content releases over the years.
-2. Top Countries and Genres
+Description: Visualizes the yearly trend of Netflix content production.
+```2. Top Countries and Genres
 # Top 10 countries
 top_countries = df['country'].value_counts().head(10)
 sns.barplot(x=top_countries.values, y=top_countries.index)
 plt.title('Top 10 Countries by Netflix Content')
 plt.show()
-Description: Shows which countries produce the most Netflix content.
+Description: Highlights which countries produce the most Netflix content.
 # Top 10 genres
 from collections import Counter
 genre_list = df['listed_in'].dropna().apply(lambda x: x.split(', '))
@@ -66,7 +67,8 @@ genres, counts = zip(*top_genres)
 sns.barplot(x=list(counts), y=list(genres))
 plt.title('Top 10 Netflix Genres')
 plt.show()
-Description: Displays the most popular genres on Netflix.
+Description: Shows the most popular genres and their distribution among Netflix titles.
+```
 3. Clustering
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.cluster import KMeans
@@ -81,8 +83,9 @@ df['genre_cluster'] = kmeans.fit_predict(genre_matrix)
 sns.countplot(data=df, x='genre_cluster')
 plt.title('Distribution of Netflix Titles by Genre Cluster')
 plt.show()
-Description: Groups titles into 5 clusters based on genres, helping identify content patterns.
-4. Comparative Analysis by Country
+Description: Groups titles into 5 genre clusters. Helps to identify content patterns and similarity between genres.
+```
+```4. Comparative Analysis by Country
 import plotly.express as px
 
 top5_countries = df['country'].value_counts().head(5).index
@@ -92,7 +95,8 @@ year_country = df_top5.groupby(['release_year', 'country']).size().reset_index(n
 fig = px.line(year_country, x='release_year', y='count', color='country',
               title='Netflix Release Trends in Top 5 Countries')
 fig.show()
-Description: Interactive plot showing content release trends over time for the top 5 countries.
+Description: Interactive line plot showing the number of releases per year for the top 5 countries, highlighting trends and comparing regional activity.
+```
 📈 Metrics & Key Results
 Total titles analyzed: 8,800
 Number of unique genres: 40
@@ -100,56 +104,55 @@ Top genre: Dramas
 Top country by content: United States
 Clustering: 5 genre clusters
 Trend: steady growth of Netflix releases since 2008
-
 📊 Visualizations
 Top 10 Genres
+![Top Genres](visuals/top_genres.png)
 
-Shows the most frequent genres on Netflix.
-Releases Per Year
+Shows the frequency of the most popular genres on Netflix.
 
-Shows growth in content production over the years.
+Number of Releases Per Year
+![Releases per Year](visuals/releases_per_year.png)
+Shows the yearly trend of Netflix content releases.
+
 Top Countries by Content Volume
+![Top Countries](visuals/top_countries.png)
+Highlights countries with the highest number of Netflix titles.
 
-Highlights countries with most Netflix content.
-Genre Clustering Distribution
-
-Visual representation of the 5 genre clusters.
+Distribution of Genre Clusters
+![Genre Clusters](visuals/genre_clusters.png)
+Represents 5 genre clusters, showing how titles group by content type.
 Interactive Plot — Releases by Year & Country
 View Interactive Plot
-
-# Future Work
+Interactive line chart for top 5 countries, showing content release trends over time.
+🔮 Future Work
 Sentiment analysis of title descriptions
 Build a recommendation system based on country + genre clusters
 Explore advanced clustering methods (hierarchical clustering, DBSCAN)
 Deploy interactive dashboards (Dash / Streamlit)
-
-# Technologies & Tools
+🛠️ Technologies & Tools
 Python 3.x
 pandas, numpy, seaborn, matplotlib, plotly, scikit-learn
 Jupyter Notebook / Google Colab
-
-# How to Run
+✅ How to Run
 git clone git@github.com:kangereyevTimur/Analysis-of-Netflix-content-preferences.git
 cd Analysis-of-Netflix-content-preferences
 pip install -r requirements.txt
 jupyter notebook notebooks/netflix_analysis.ipynb
 # or open in Google Colab
-
-# Authors
+👥 Authors
 Timur Kangereyev
 Zhanel Karimzhanova
-
-# Contact
-Email: kangereev.timur@gmail.com; karimzhanovazhanel4@gmail.com
-GitHub: kangereyevTimur; janelkr
-
-# Acknowledgments
+📬 Contact
+Email: kangereev.timur@gmail.com
+GitHub: kangereyevTimur
+🙏 Acknowledgments
 Kaggle for the Netflix dataset
 Seaborn, Plotly, Matplotlib communities
 Mentors and colleagues for feedback
-
-#License
+📄 License
 This project is licensed under the MIT License.
+
+
 
 
 
