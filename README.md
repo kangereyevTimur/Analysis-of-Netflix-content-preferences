@@ -58,7 +58,7 @@ plt.show()
 Description: Visualizes the yearly trend of Netflix content production.
 ```
 2. Top Countries and Genres
-```
+```python
 # Top 10 countries
 top_countries = df['country'].value_counts().head(10)
 sns.barplot(x=top_countries.values, y=top_countries.index)
@@ -79,7 +79,7 @@ plt.show()
 Description: Shows the most popular genres and their distribution among Netflix titles.
 ```
 3. Clustering
-```
+```python
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.cluster import KMeans
 
@@ -95,7 +95,8 @@ plt.title('Distribution of Netflix Titles by Genre Cluster')
 plt.show()
 Description: Groups titles into 5 genre clusters. Helps to identify content patterns and similarity between genres.
 ```
-```4. Comparative Analysis by Country
+4. Comparative Analysis by Country
+```python
 import plotly.express as px
 
 top5_countries = df['country'].value_counts().head(5).index
@@ -107,32 +108,34 @@ fig = px.line(year_country, x='release_year', y='count', color='country',
 fig.show()
 Description: Interactive line plot showing the number of releases per year for the top 5 countries, highlighting trends and comparing regional activity.
 ```
-📈 Metrics & Key Results
+
+# Metrics & Key Results
 Total titles analyzed: 8,800
 Number of unique genres: 40
 Top genre: Dramas
 Top country by content: United States
 Clustering: 5 genre clusters
 Trend: steady growth of Netflix releases since 2008
-📊 Visualizations
-Top 10 Genres
+
+# Visualizations
+1. Top 10 Genres
 ![Top Genres](visuals/top_genres.png)
 
 Shows the frequency of the most popular genres on Netflix.
 
-Number of Releases Per Year
+2. Number of Releases Per Year
 
 ![Releases per Year](visuals/releases_per_year.png)
 
 Shows the yearly trend of Netflix content releases.
 
-Top Countries by Content Volume
+3. Top Countries by Content Volume
 
 ![Top Countries](visuals/top_countries.png)
 
 Highlights countries with the highest number of Netflix titles.
 
-Distribution of Genre Clusters
+4. Distribution of Genre Clusters
 
 ![Genre Clusters](visuals/genre_clusters.png)
 
@@ -179,6 +182,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
