@@ -19,11 +19,7 @@ Netflix-Content-Analysis/
 
 ├── visuals/ # Saved PNG and HTML interactive plots
 
-├── README.md # Project documentation
 
-├── requirements.txt # Python dependencies
-
-└── LICENSE # License file
 - **data/** – хранит CSV с Netflix контентом  
 - **notebooks/** – основной анализ: EDA, визуализация, кластеризация  
 - **visuals/** – итоговые графики, PNG + интерактивные HTML  
@@ -182,6 +178,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
