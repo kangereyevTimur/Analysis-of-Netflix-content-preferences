@@ -23,8 +23,6 @@ Netflix-Content-Analysis/
 - **data/** – хранит CSV с Netflix контентом  
 - **notebooks/** – основной анализ: EDA, визуализация, кластеризация  
 - **visuals/** – итоговые графики, PNG + интерактивные HTML  
-- **README.md** – документация и описание проекта  
-- **requirements.txt** – зависимости для Python  
 
 ## 🔍 Analysis Steps  
 
@@ -178,6 +176,7 @@ Mentors and colleagues for feedback
 
 # License
 This project is licensed under the MIT License.
+
 
 
 
